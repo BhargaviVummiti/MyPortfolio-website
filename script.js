@@ -1,26 +1,3 @@
-<script src="https://unpkg.com/scrollreveal"></script>
-ScrollReveal().reveal('.navbar', { 
-  origin: 'top', 
-  distance: '20px', 
-  duration: 500, 
-  delay: 300
-});
-
-ScrollReveal().reveal('.Hero-left',{
-  origin:'left',
-  distance:'20px',
-  duration:1000,
-  delay:200
-});
-
-ScrollReveal().reveal('.Hero-right',{
-  origin:'right',
-  distance:'20px',
-  duration:1000,
-delay:200
-});
-
-
 function sendWhatsApp(){
   const name = document.getElementById("name").value.trim();
   const email = document.getElementById("email").value.trim();
