@@ -1,0 +1,547 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(246, 229, 246);
+}
+
+/* Navbar start */
+.navbar {
+    width: 100%;
+    padding: 20px 40px;
+    top: 0;
+    left: 0%;
+    background: rgb(174, 140, 174);
+    box-shadow: 0 2px 8px rgb(77, 28, 77);
+}
+
+.navbar .logo {
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.navbar-nav .nav-item {
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+}
+
+.navbar-nav .nav-link {
+    color: black;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: white;
+}
+
+@media only screen and (min-width:320px) and (max-width:425px) {
+    .navbar .logo {
+        font-size: 15px;
+
+    }
+}
+
+/*nav bar sec end */
+/* Hero sec start */
+.HeroSec {
+    padding: 80px 10%;
+    min-height: 100vh;
+}
+
+.hero-left {
+    flex: 1 1 500px;
+    z-index: 1;
+}
+
+.Hero-left .tagline {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.Hero-left h1 {
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.Hero-left span {
+    color: rgb(174, 140, 174);
+    font-size: 50px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.buttons .btn-primary {
+    padding: 15px 30px;
+    background-color: rgb(175, 159, 175);
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.buttons .btn-primary:hover {
+    color: white;
+}
+
+.Hero-right {
+    flex: 1 1 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Hero-right img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid rgb(175, 159, 175);
+    box-shadow: 0 4px 12px rgb(77, 28, 77);
+    z-index: -333;
+}
+
+@media only screen and (min-width:768px) {
+    .HeroSec .Hero-left h1 {
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    .HeroSec .Hero-left span {
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    .Hero-left .buttons {
+        justify-content: center;
+    }
+
+    .Hero-left {
+        padding-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width:1440px) {
+    .HeroSec .Hero-left .buttons {
+        justify-content: left;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:425px) {
+    .Hero-left {
+        text-align: center;
+    }
+
+    .HeroSec .Hero-left h1 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .HeroSec .Hero-left span {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .Hero-left .buttons {
+        justify-content: center;
+    }
+
+    .Hero-left {
+        padding-bottom: 50px;
+    }
+
+    .Hero-right img {
+        width: 300px;
+        height: 300px;
+    }
+}
+/* Hero sec end */
+/* About sec start */
+.AboutSec {
+    padding: 60px 20px;
+    background: #ffffff;
+}
+
+.content h5 {
+    font-size: 20px;
+}
+
+.content h2 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.content p {
+    font-size: 19px;
+}
+
+.Details p {
+    font-size: 19px;
+}
+
+.interests {
+    margin-top: 30px;
+}
+
+.interests span {
+    background-color: #e0e0e0;
+    margin-right: 15px;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+@media only screen and (min-width:320px) and (max-width:425px) {
+    .interests span {
+        background-color: #e0e0e0;
+        padding: 2px 2px;
+        border-radius: 20px;
+    }
+}
+
+
+@media only screen and (min-width:320px) and (max-width:375px) {
+    .Details p {
+        font-size: 14px;
+    }
+
+    .content p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .content h5 {
+        text-align: center;
+    }
+
+    .content h2 {
+        text-align: center;
+    }
+}
+
+/* About sec end */
+/* My Skills sec start */
+.SkillsSec {
+    padding: 0px 0px 80px;
+}
+
+.Skills .SkillsSec h2 {
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.Skills-card .Skills-icon {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.Skills-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.Skills-track {
+    display: flex;
+    gap: 50px;
+    width: max-content;
+    justify-content: center;
+    animation: scroll-left 30s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.Skills-card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 20px 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(23, 20, 20, 0.08);
+    transition: transform 0.3s;
+    width: 180px;
+    margin: 0;
+}
+
+.Skills-card:hover {
+    transform: scale(1.05);
+}
+
+.Skills-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.Skills-card h4 {
+    font-size: 22px;
+    color: #333;
+    font-weight: 600;
+    margin: 10px;
+}
+
+/* My Skills sec end */
+/* Projects sec start */
+.Projects {
+    padding: 80px 20px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.ProjectSec h2 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.Project-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.Project-card {
+    position: relative;
+    width: 470px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    background: #f9f9f9;
+}
+
+.Project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 15px;
+    transition: all 0.05s ease;
+}
+
+.Project-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    opacity: 0;
+    /*fully invisible*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    transition: opacity 0.5s ease;
+
+}
+
+.Project-card:hover img {
+    transform: scale(1.1);
+    filter: blur(2px);
+}
+
+.Project-card:hover .Project-info {
+    opacity: 1;
+    /*visible*/
+}
+
+.Project-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.Project-info a {
+    padding: 6px 14px;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.Project-info a:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* Projects sec ends */
+/* Contact sec start */
+.Contact {
+    padding: 80px 20px;
+}
+
+.Contact .container .Section-title {
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.Contact .container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.Contact-form {
+    margin-top: 30px;
+    padding: 0 10px;
+}
+
+.Form-group {
+    margin-bottom: 20px;
+}
+
+.Contact-form input,
+.Contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgbs(0, 0, 0, 0.05);
+    font-size: 16px;
+}
+
+.Contact-form input,
+.Contact-form textarea {
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+.Form-buttons .btn-primary {
+    border: none;
+    border-radius: 7px;
+    padding: 15px 25px;
+    background-color: black;
+    color: #d5c7c7;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.Form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Form-buttons .btn-primary:hover {
+    background-color: #333;
+    transform: scale(1.06);
+}
+@media only screen and (min-width:320px) and (max-width:425px){
+    .Form-buttons .btn-primary {
+        border: none;
+    border-radius: 7px;
+    padding: 15px 25px;
+    background-color: black;
+    color: #d5c7c7;
+    font-size: 10px;
+    font-weight: 700;
+
+    }
+}
+/* Contact sec ends */
+/* Footer sec start */
+.Footer {
+    background-color: rgb(174, 140, 174);
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.Footer-container h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.Footer-container p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.Social-icons {
+    margin-bottom: 10px;
+}
+
+.Social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.Social-icons a:hover {
+    color: rgb(35, 15, 35);
+}
+
+.Footer .Copyright {
+    font-size: 15px;
+    margin-top: 15px;
+}
+@media only screen and (min-width:320px) and (max-width:375px){
+    .Footer-container h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.Footer-container p {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.Footer .Copyright {
+    font-size: 12px;
+    margin-top: 15px;
+}
+}
+@media only screen and (min-width:425px){
+    .Footer-container h3 {
+    font-size: 27px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.Footer-container p {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.Footer .Copyright {
+    font-size: 15px;
+    margin-top: 15px;
+}
+}
+/* Footer sec ends */
